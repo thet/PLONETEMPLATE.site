@@ -1,0 +1,7 @@
+{
+  "name": "PLONETEMPLATE",
+  "description": "PLONETEMPLATE external libraries",
+  "dependencies": {
+    "bootstrap": ">=3.3.1"
+  }
+}

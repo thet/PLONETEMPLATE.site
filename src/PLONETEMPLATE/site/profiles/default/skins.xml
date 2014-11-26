@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="PLONETEMPLATE_skin">
+
+ <object name="PLONETEMPLATE_custom"
+    meta_type="Filesystem Directory View"
+    directory="PLONETEMPLATE.site:skins/PLONETEMPLATE_custom"/>
+
+ <skin-path name="PLONETEMPLATE_skin" based-on="Sunburst Theme">
+  <layer name="PLONETEMPLATE_custom" insert-after="custom"/>
+ </skin-path>
+
+</object>

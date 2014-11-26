@@ -1,0 +1,9 @@
+{
+  "name": "PLONETEMPLATE",
+  "version": "1.0.0",
+  "description": "PLONETEMPLATE Grunt environment",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-less": ""
+  }
+}

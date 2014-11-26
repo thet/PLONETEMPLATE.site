@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<notheme if="$ajax_load" /><!-- don't theme overlays -->
+<notheme if-path="@@plone.app.debugtoolbar.interactive.response"/>
+<notheme if-path="@@plone.app.debugtoolbar.interactive.tales"/>
+
+<rules css:if-content="#visual-portal-wrapper">
+  <theme href="++theme++PLONETEMPLATE_theme/static/template.html" />
+
+  <!-- HEAD -->
+  <copy attributes="*" theme="/html" content="/html"/>
+  <replace theme="/html/head" content="/html/head"/>
+  <drop css:theme=".dropme" />
+
+  <replace content="/html/head/link[@rel='shortcut icon']">
+    <link rel="icon" href="++theme++PLONETEMPLATE_theme/static/img/favicon.png" type="image/x-icon"/>
+  </replace>
+
+  <!-- BODY -->
+  <copy attributes="class dir" theme="/html/body" content="/html/body" />
+
+  <before
+      css:content='#portal-header > p.hiddenStructure'
+      css:theme='#theme_navbar .navbar-inner' />
+  <copy
+      attributes="title href accesskey"
+      css:content='#portal-logo'
+      css:theme='#theme_logo' />
+
+  <!-- meta -->
+  <replace css:content="#portal-personaltools-wrapper"
+           css:theme="#portal-personaltools-wrapper"
+           css:if-not-content="#anon-personalbar"/>
+
+  <!-- main content -->
+  <replace css:content-children="#portal-column-content"
+           css:theme-children="#theme_content" />
+  <replace css:content-children="#portal-column-one"
+           css:theme-children="#theme_sidebar_left" />
+
+  <!-- footer -->
+  <replace css:content="#portal-siteactions"
+           css:theme-children="#theme_footer" />
+
+  <!-- debugtoolbar -->
+  <after css:content="#debug-toolbar-trigger"
+         css:theme-children="body" />
+  <after css:content="#debug-toolbar"
+         css:theme-children="body" />
+
+</rules>
+</rules>

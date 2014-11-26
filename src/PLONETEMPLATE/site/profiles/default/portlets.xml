@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+
+  <assignment name="navigation"
+      remove="True"
+      manager="plone.leftcolumn"
+      category="context"
+      key="/"
+      type="portlets.Navigation" />
+
+  <!-- ADD -->
+  <assignment name="navigation-main"
+      type="portlets.Navigation"
+      category="context"
+      key="/"
+      manager="plone.leftcolumn"
+      visible="True">
+    <property name="name">navigation-main</property>
+    <property name="root"/>
+    <property name="currentFolderOnly">False</property>
+    <property name="includeTop">False</property>
+    <property name="topLevel">0</property>
+    <property name="bottomLevel">2</property>
+  </assignment>
+
+</portlets>

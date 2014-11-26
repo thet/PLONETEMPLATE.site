@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object>
+  <hidden manager="plone.portalheader" skinname="PLONETEMPLATE_skin">
+    <viewlet name="plone.global_sections"/>
+  </hidden>
+  <hidden manager="plone.abovecontent" skinname="PLONETEMPLATE_skin">
+    <viewlet name="plone.path_bar"/>
+  </hidden>
+  <hidden manager="plone.portalfooter" skinname="PLONETEMPLATE_skin">
+    <viewlet name="plone.footer"/>
+    <viewlet name="plone.colophon"/>
+    <viewlet name="plone.analytics"/>
+  </hidden>
+</object>
