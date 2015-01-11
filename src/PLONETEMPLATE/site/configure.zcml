@@ -17,7 +17,7 @@
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
     directory="templates"
-    layer=".browser.interfaces.IThemeSpecific" />
+    layer=".interfaces.IThemeSpecific" />
 
   <include package=".browser" />
   <i18n:registerTranslations directory="locales" />

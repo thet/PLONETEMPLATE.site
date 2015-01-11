@@ -8,7 +8,7 @@
   <browser:resourceDirectory
       name="PLONETEMPLATE.site"
       directory="resources"
-      layer=".interfaces.IThemeSpecific"
+      layer="..interfaces.IThemeSpecific"
       />
 
 </configure>

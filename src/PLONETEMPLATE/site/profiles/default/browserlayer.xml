@@ -1,6 +1,6 @@
 <layers>
   <layer
       name="PLONETEMPLATE_skin"
-      interface="PLONETEMPLATE.site.browser.interfaces.IThemeSpecific"
+      interface="PLONETEMPLATE.site.interfaces.IThemeSpecific"
       />
 </layers>
