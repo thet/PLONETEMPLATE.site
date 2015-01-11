@@ -27,7 +27,7 @@
   <plone:static
       directory="theme"
       type="theme"
-      name="PLONETEMPLATE_theme"
+      name="PLONETEMPLATE"
       />
 
   <genericsetup:registerProfile

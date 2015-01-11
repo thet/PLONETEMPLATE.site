@@ -9,7 +9,7 @@
 <notheme if-path="@@plone.app.debugtoolbar.interactive.tales"/>
 
 <rules css:if-content="#visual-portal-wrapper">
-  <theme href="++theme++PLONETEMPLATE_theme/static/template.html" />
+  <theme href="++theme++PLONETEMPLATE/static/template.html" />
 
   <!-- HEAD -->
   <copy attributes="*" theme="/html" content="/html"/>
@@ -17,7 +17,7 @@
   <drop css:theme=".dropme" />
 
   <replace content="/html/head/link[@rel='shortcut icon']">
-    <link rel="icon" href="++theme++PLONETEMPLATE_theme/static/img/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="++theme++PLONETEMPLATE/static/img/favicon.png" type="image/x-icon"/>
   </replace>
 
   <!-- BODY -->
