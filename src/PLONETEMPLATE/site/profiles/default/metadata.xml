@@ -2,7 +2,7 @@
 <metadata>
   <version>1</version>
   <dependencies>
-    <dependency>profile-collective.folderishtypes:default</dependency>
+    <dependency>profile-collective.folderishtypes.dx:default</dependency>
     <dependency>profile-collective.folderishtraverse:default</dependency>
     <dependency>profile-collective.folderorder:default</dependency>
     <dependency>profile-plone.app.theming:default</dependency>
