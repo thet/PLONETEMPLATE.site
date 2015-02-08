@@ -30,7 +30,7 @@ setup(
         'setuptools',
         'Products.CMFPlone',
         'collective.folderishtraverse',
-        'collective.folderishtypes',
+        'collective.folderishtypes [dexterity]',
         'collective.folderorder',
         'plone.app.theming',
         'plone.resource',
